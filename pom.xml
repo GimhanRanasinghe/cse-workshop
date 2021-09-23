@@ -19,6 +19,14 @@
     <maven.release.plugin.version>2.5.3</maven.release.plugin.version>
   </properties>
 
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/GimhanRanasinghe/cse-workshop</url>
+    </repository>
+  </distributionManagement>
+
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -42,7 +50,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>${maven.compiler.plugin.version}</version>
+<!--        <version>1.0</version>-->
         <configuration>
           <source>${jdk.version}</source>
           <target>${jdk.version}</target>
